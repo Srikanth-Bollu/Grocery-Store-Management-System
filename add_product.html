@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="add product for the Grocery store mangement">
+        <title>Add Product</title>
+        <link rel="icon" href="grocery.jpg">
+        <link rel="stylesheet" href="add_product.css">
+           
+    </head>
+    <body>
+         
+        <article id="add_product">
+            <h2>Add New Product</h2>
+            <hr>
+            
+            
+                <fieldset>
+                    <legend>Enter New Product Details</legend>
+
+                    <p>
+                        <label for="product_id">Product ID:</label>
+                        <input class="container" type="text" name="product_id" id="product_id" placeholder="1" autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+
+                        <label for="product_name">Product Name:</label>
+                        <input class="container" type="text" name="product_name" id="product_name" placeholder="Name" autocomplete="on" required >
+                    </p>
+                    <p>
+                        <label for="unit">Unit:</label>
+                            <select class="container" name="unit" id="unit">
+                                <option value="kg"> Kg</option>
+                                <option value="each" selected>Each</option>
+                            </select>
+                                
+                    </p>
+                    <p>
+                        <label for="price_per_unit">Price Per Unit:</label>
+                        <input class="container" type="text" name="price_per_unit" id="price_per_unit" placeholder="Price" autocomplete="on" required >
+                    </p>   
+                </fieldset>
+                
+                <div class="box">
+                    <button class="btn" type="submit" onclick="openPopup()">Add</button>
+                    <div class="popup" id="popup">
+                        <img src="tick.jpg" alt="tick image">
+                        <h2>Successful!</h2>
+                        <p>Your Item added to product list successfully!!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+
+                    </div>
+                </div>
+                
+                <script>
+                    let popup=document.getElementById("popup");
+                    function openPopup(){
+                        popup.classList.add("open-popup");
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup");
+                    }
+                </script>
+            
+
+        </article>
+
+        <hr>
+        <footer>
+            &lt;&lt;&lt;&copy;<a href="main_page.html">Back To Home</a>&gt;&gt;&gt;
+        </footer>
+    </body>
+</html>

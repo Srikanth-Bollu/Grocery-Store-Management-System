@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a:visited{
+    color: lightgray;
+}
+a:hover,a:active{
+    color: #eee;
+}
+table,tr,th,td,caption{
+    border: 5px solid rgb(133, 127, 127);
+    font-family: 'Courier New', Courier, monospace;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+html{
+    text-align: center;
+    background-image: url(all_products.jpg);
+    
+}
+
+body{
+    padding: 10px 5px 10px 5px;
+    margin:10px 300px 200px 300px ;
+    background-color: white;
+    font-size: 2rem;
+}
+footer{    
+    font-size: 1.5rem;
+    color: black;   
+}
+h1{
+    font-size: 4rem;
+    font-family: "Roboto",sans-serif;
+    text-align: center;
+    text-decoration:solid;
+}
+
+.container{
+    font-size: 1.5rem;   
+}
+.buttons{
+    
+    margin-top: 50px;
+    margin-left: 5px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+}
+.footer{
+    color: black;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="delete product from the Grocery store mangement">
+        <title>Remove Product</title>
+        <link rel="icon" href="grocery.jpg">
+        <link rel="stylesheet" href="remove_product.css">
+
+        
+        
+    </head>
+    <body>
+        
+    
+
+
+        <article id="delete_product">
+            <h2>Remove Product</h2>
+            <fieldset>
+                <legend>Enter Product Details</legend>
+
+                <p>
+                    <label for="product_id">Product ID:</label>
+                    <input class="container" type="text" name="product_id" id="product_id" placeholder="1" autocomplete="on" required autofocus>
+                </p>
+                
+                
+            </fieldset>
+            <div class="box">
+                <button class="btn" type="submit" onclick="openPopup()">Remove</button>
+                <div class="popup" id="popup">
+                    <img src="tick.jpg" alt="tick image">
+                    <h2>Successfull!</h2>
+                    <p>Item Removed from the list Successfully!!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+
+                </div>
+                
+
+            </div>
+            
+            <script>
+                let popup=document.getElementById("popup");
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+            </script> 
+        </article>
+        <footer>
+            &lt;&lt;&lt;&copy;<a href="main_page.html"> Back To Home</a>&gt;&gt;&gt;
+        </footer>
+    </body>
+</html>

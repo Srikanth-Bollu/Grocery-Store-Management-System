@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="The official website for the Grocery Store Management">
+        <title>Order product</title>
+        <link rel="icon" href="grocery.jpg">
+        <link rel="stylesheet" href="order_product.css">       
+    </head>
+    <body>
+        <article id ="order_product">
+            <h1>New Order </h1>
+        
+                <fieldset >
+                    <legend> Enter Order Details</legend>
+                    <p >
+
+                        <label for="name">Customer Name : </label>
+                        <input class="container" type="text" name="name" id="name" placeholder="Name" autofocus required>
+                    </p>
+                    <p>
+
+                        <label for="item">Item:</label>
+                        <select class="container" name="item" id="item" >
+                            <optgroup label="Kg">
+                                <option value="rice"> Rice</option>
+                                <option value="banana" selected >Banana </option>
+                                <option value="apple">Apple</option>
+                                <option value="tomato">Tomato</option>
+                                <option value="onion">Onion</option>
+                            </optgroup>
+                            <optgroup label="Each">
+                                <option value="tooth paste">Tooth Paste</option>
+                                <option value="moong dal">Moong Dal</option>
+                                <option value="face mask">Face Mask</option>
+                                <option value="soap">Soap</option>
+                            </optgroup>
+                            
+                        </select>
+                        
+                    </p> 
+                    <p >
+
+                        <label for="quantity">Quantity : </label>
+                        <input class="container" type="number" name="quantity" id="quantity" min="00" max="100" step="1" value="01" required>
+                    </p>
+                    <p >
+                        <label for="price">Total Price : </label>
+                        <input class="container" type="text" name="price" id="price" placeholder="50" autocomplete="on" required >
+                    </p>
+                </fieldset>
+                <div class="box">
+                    <button  type="submit" class="btn" onclick="openPopup()">Order</button>
+                    <div class="popup" id="popup">
+                        <img src="tick.jpg" alt="tick image">
+                        <h2>Thank You!</h2>
+                        <p>Your Order Confirmed We Will Deliver Your Order Shortly. Thanks!</p>
+                        <button type="button" onclick="closePopup()">OK</button>
+        
+                    </div>
+                </div>
+                
+                <script>
+                    let popup=document.getElementById("popup");
+                    function openPopup(){
+                        popup.classList.add("open-popup");
+                    }
+                    function closePopup(){
+                        popup.classList.remove("open-popup");
+                    }
+                </script>
+                
+            
+        </article>
+        <hr> 
+        <footer>
+            &lt;&lt;&lt;&copy;<a href="main_page.html">Back To Home</a>&gt;&gt;&gt;
+        </footer>   
+    </body>
+</html>

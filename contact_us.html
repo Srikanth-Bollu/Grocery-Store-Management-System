@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Contact our Services">
+        <title>Contact Us</title>
+        <link rel="icon" href="grocery.jpg">
+        <link rel="stylesheet" href="contact_us.css">
+        
+    </head>
+
+    <body>
+        
+        <article id="contact_us">
+            <h1>Our Contact Form</h1>
+            <fieldset>
+                <legend>Send Us A Message</legend>
+            
+                <p>
+                <label for="name">Name:</label>
+                <input class="container" type="text" name="name" id="name"
+                placeholder="your name" required autofocus>   
+                </p>
+                <p>
+                    <label for="mail">Email:</label>
+                    <input class="container" type="email" name="mail" id="mail" placeholder="your email" required>
+                </p>
+                <p>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea class="container" name="message
+                    " id="message" cols="30" rows="10" placeholder="Type Your Message Here"></textarea>
+                </p>
+            </fieldset>
+            <div class="box">
+                <button class="btn" type="submit" onclick="openPopup()">Send</button>
+                <div class="popup" id="popup">
+                    <img src="tick.jpg" alt="tick image">
+                    <h2>Successfull!</h2>
+                    <p>Message Sent Successfully!!</p>
+                    <button type="button" onclick="closePopup()">OK</button>
+
+                </div>
+                
+
+            </div>
+            
+            <script>
+                let popup=document.getElementById("popup");
+                function openPopup(){
+                    popup.classList.add("open-popup");
+                }
+                function closePopup(){
+                    popup.classList.remove("open-popup");
+                }
+            </script> 
+            
+
+        </article>
+        <hr>
+        <footer>
+            &lt;&lt;&lt;&copy;<a href="main_page.html">Back To Home</a>&gt;&gt;&gt;
+        </footer>  
+    </body>
+</html>
